@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Shared Preferences</string>
+    <string name="action_sign_in">Sign In</string>
+    <string name="error_invalid_password">Invalid Password</string>
+    <string name="error_field_required">Field Required</string>
+    <string name="error_invalid_email">Invalid Email</string>
+</resources>
