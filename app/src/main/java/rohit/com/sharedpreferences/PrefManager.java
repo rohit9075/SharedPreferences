@@ -9,7 +9,7 @@ import android.content.SharedPreferences;
 
 public class PrefManager {
 
-    Context context;
+    private Context context;
 
     PrefManager(Context context) {
         this.context = context;
@@ -20,7 +20,7 @@ public class PrefManager {
         SharedPreferences.Editor editor = sharedPreferences.edit();
         editor.putString("Email", email);
         editor.putString("Password", password);
-        editor.commit();
+        editor.apply();
     }
 
     public String getEmail() {
@@ -34,4 +34,6 @@ public class PrefManager {
         boolean isPasswordEmpty = sharedPreferences.getString("Password", "").isEmpty();
         return isEmailEmpty || isPasswordEmpty;
     }
+
+
 }
